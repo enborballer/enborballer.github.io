@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParticleEx - Enhanced Particle Effects for GTA 3 & Vice City on PC</title>
+    <meta name="description" content="ParticleEx is a free extension that brings the authentic PS2 and Xbox particle effects from Grand Theft Auto 3 and Vice City to the PC versions. Download today for a visual upgrade.">
+    <meta name="keywords" content="particleex, gta 3, vice city, gta3, gtavc, particle effects, ps2, xbox, pc, mod, graphics, visual upgrade, enhancement, download, enborballer">
+    <meta name="author" content="enborballer">
+    <meta property="og:title" content="ParticleEx - Enhanced Particle Effects for GTA 3 & Vice City on PC">
+    <meta property="og:description" content="Experience the classic PS2/Xbox particle effects in GTA 3 and Vice City on PC. Simple download, no technical skills needed.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/enborballer/ParticleEx">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ParticleEx - Enhanced Particle Effects for GTA 3 & Vice City on PC">
+    <meta name="twitter:description" content="Bring the authentic PS2/Xbox particle effects to your PC copy of GTA 3 & Vice City. Easy install, no tech skills required.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2d3748;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 40px 50px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #1a202c;
+            margin-bottom: 8px;
+            line-height: 1.2;
+            border-bottom: 4px solid #4a5568;
+            padding-bottom: 15px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5282;
+            margin: 35px 0 15px 0;
+            padding-top: 10px;
+            border-top: 1px solid #e2e8f0;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        ul, ol {
+            margin: 15px 0 20px 30px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(145deg, #667eea, #764ba2);
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+            margin: 20px 0 30px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+        .hero-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(102, 126, 234, 0.6);
+        }
+        .download-section {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-left: 6px solid #48bb78;
+        }
+        .download-button {
+            display: block;
+            background: linear-gradient(145deg, #48bb78, #2f855a);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 6px 15px rgba(72, 187, 120, 0.4);
+            width: 100%;
+            margin: 15px 0;
+            transition: all 0.2s;
+        }
+        .download-button:hover {
+            background: linear-gradient(145deg, #38a169, #276749);
+            box-shadow: 0 10px 20px rgba(72, 187, 120, 0.5);
+            transform: translateY(-2px);
+        }
+        .notice {
+            background: #ebf8ff;
+            border-radius: 8px;
+            padding: 15px 20px;
+            border-left: 5px solid #4299e1;
+            margin: 25px 0;
+        }
+        .checklist {
+            background: #f0fff4;
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin: 20px 0;
+            border: 1px solid #c6f6d5;
+        }
+        code {
+            background: #edf2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 0.9em;
+            color: #2b6cb0;
+        }
+        .faq {
+            margin: 15px 0;
+        }
+        .faq h4 {
+            font-weight: 700;
+            color: #2c5282;
+            margin-bottom: 5px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        .small-jump {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .small-jump:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .hero-badge {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ ParticleEx - Bring Authentic PS2 & Xbox Effects to PC</h1>
+        
+        <a href="https://github.com/enborballer/ParticleEx" class="hero-badge">⬇️ Download ParticleEx Now</a>
+        
+        <p>Have you ever played GTA 3 or Vice City on PlayStation 2 or Xbox and wondered why your PC version just doesn't look quite as \n"alive"? You remembered sparks shooting from gunfire, bright tire smoke, and beautiful water splashes—only to find your PC \nedition feels flat. <strong>ParticleEx fixes that.</strong></p>
+        
+        <p>ParticleEx is a friendly, simple extension created specifically for <strong>GTA 3</strong> and <strong>Grand Theft Auto: Vice City</strong> that implants the \nfull particle engine from the PS2/Xbox releases into your PC game. The result? Every explosion, every puff of dust, every engine \nspark—all upgraded to match the console look you remember. And it's completely free.</p>
+
+        <h2>🎯 What Exactly Does ParticleEx Do?</h2>
+        <p>In simple terms, particles are the small visual effects that make the game world feel believable. Think of <strong>dust kicking up when you run</strong>, <strong>rain droplets hitting the pavement</strong>, <strong>smoke from tires</strong>, and <strong>flame sparks when metal scrapes</strong>. The PC versions of these classic games used a simplified particle system compared to their console counterparts. ParticleEx replaces the PC particle behavior with the superior PS2/Xbox system.</p>
+        <p>Your gameplay remains exactly the same. No new buttons, no confusing menus—just beautiful, enhanced visuals everywhere you look. Where you used to see simple squares, you will now see realistic round, life-like effects.</p>
+
+        <h2>🖥️ Why Use ParticleEx?</h2>
+        <ul>
+            <li><strong>Authentic Visuals:</strong> Experience the exact particle effects originally created for the PS2 and Xbox, now perfectly mapped to your PC version.</li>
+            <li><strong>Massive Improvement:</strong> Gunfights, explosions, weather effects, and car crashes suddenly fill your screen with dynamic detail.</li>
+            <li><strong>Completely Safe:</strong> This is a simple modification. It doesn't change any game logic, missions, or difficulty. It only improves the visuals.</li>
+            <li><strong>No Technical Skills Required:</strong> If you can use a mouse and click \nextract a folder, you can install this. Follow the instructions below.</li>
+            <li><strong>Lightweight:</strong> Will not slow down your PC and needs almost no hard drive space.</li>
+            <li><strong>Works with Modern Computers:</strong> Tested on Windows 10 and Windows 11.</li>
+        </ul>
+
+        <h2>🎮 Is It Right For Your Setup?</h2>
+        <p>The original GTA 3 and Vice City games were made in the early 2000s. That means ParticleEx uses very few resources. Simply stated, if you can run the base game, you can run this. There are no unusual requirements like a gaming PC, updated graphics card, or high-tier CPU. Even low-end office laptops run this without issue.</p>
+
+        <div class="download-section">
+        <h2>⬇️ Download and Install Guide (Windows)</h2>
+        <p>Please read these steps carefully. You do <u>not</u> need any special technical knowledge. Set aside about 5 minutes and you'll have the effects installed. If you haven't downloaded the file yet, you have three easy ways:</p>
+        <p><strong>Option 1 (Quickest):</strong> <a href="https://github.com/enborballer/ParticleEx" class="small-jump">Click Here to go to ParticleEx website</a></p>
+        <p><strong>Option 2:</strong> In your browser (Chrome, Edge, Firefox), type this exact link into the address bar:</p>
+        <code>https://github.com/enborballer/ParticleEx</code>
+        <p><strong>Option 3:</strong> Click the giant <a href="#downloadB" class="small-jump">green Download button</a> down below in this page.</p>
+        
+        <p id="downloadB"><br></p>
+        
+        <p style="font-size: 1.2rem; font-weight: bold; color: #2f855a; margin: 20px 0 5px 0;">🚨 Please read the special instructions for your download type. 🚨</p>
+        <p>In this case, <strong>you will be redirected to GitHub's main page for this project</strong>, not directly to a file. So this instruction applies:</p>
+        <div class="notice">
+            <p style="margin-bottom: 0;">📄 <strong>Important Download Instruction:</strong><br>
+            Visit this link to download the application: <a href="https://github.com/enborballer/ParticleEx">https://github.com/enborballer/ParticleEx</a></p>
+        </div>
+        <p>On the website (Github page), look for a button labeled <span style="background: #edf2f7; padding: 2px 8px; border-radius:4px; font-weight:bold;">"Code"</span> or the <span style="background: #edf2f7; padding: 2px 8px; border-radius:4px; font-weight:bold;">"Releases"</span> link. Click on it. If you see a file named <code>ParticleEx.zip</code>, or any <code>.zip</code> file (often under Assets), click it to download it. (If you find an <code>.exe</code> file listed, download that instead.)</p>
+        </div>
+        
+        <h3>📥 Step-by-Step Instructions After Your Download Finishes:</h3>
+        <p>Since most users will download a <strong>.zip</strong> file, we'll show you how to handle both \n<code>.zip</code> and (just in case) an <code>.exe</code> file. <strong>Find your type below:</strong></p>
+        
+        <div class="checklist">
+        <h4 style="display: flex; align-items:center; gap: 8px; margin-bottom: 15px;">📌 If you downloaded a <u>ZIP file</u> (Most common)</h4>
+        <ol>
+            <li><strong>Find the downloaded file:</strong> Check your <strong>Downloads</strong> folder (usually on the taskbar or in your File Explorer). It will be named something like <code>ParticleEx.zip</code>.</li>
+            <li><strong>Right-click the ZIP file.</strong> A small menu will appear.</li>
+            <li><strong>Select "Extract All..."</strong> (On Windows 10/11, this is often the first option). You may press "Extract" or "Ok" when the new window appears. It will copy the files and open a new folder. <em>Remember what this folder is called!</em></li>
+            <li><strong>Open the extracted folder</strong> that you just created. It will be in the same location as the ZIP (usually Downloads). Inside, you might see another folder with the same name. Double-click your way inside it.</li>
+            <li><strong>Find and run the right file:</strong> Look for a file called <code>ParticleEx.exe</code> (or an application that says “ParticleEx”). Double-click this file to run it. That's it. The effects will now automatically apply to your game.</li>
+        </ol>
+        <p style="margin:10px 0 0 0;"><strong>Note:</strong> The file must stay in that folder for the effects to work. To make sure it works every time, you can keep it there and never delete the extracted folder.</p>
+        </div>
+        
+        <div class="checklist">
+        <h4 style="display: flex; align-items:center; gap: 8px; margin-bottom: 15px;">💻 If you downloaded an <u>EXE file</u></h4>
+        <ol>
+            <li><strong>Download and run this file directly.</strong></li>
+            <li>Look in your <strong>Downloads</strong> folder.</li>
+            <li>Double-click the <code>.exe</code> file that you downloaded.</li>
+            <li>If a "Security Warning" dialog appears, click <strong>"Run"</strong> or <strong>"Yes"</strong>. (ParticleEx is safe, this is just a standard Windows message.)</li>
+            <li>Follow any simple on-screen prompts (usually just "Next" or "Install"). If no prompts appear, it simply opens and applies the patch immediately.</li>
+        </ol>
+        </div>
+
+        <h2>❓ Frequently Asked Questions (FAQ)</h2>
+        
+        <div class="faq">
+        <h4>🤔 Will ParticleEx alter my save games or delete my progress?</h4>
+        <p>No. Absolutely not. This extension only changes the visual particle system. Game saves, progress, and all in-game data remain completely untouched.</p>
+        </div>
+        
+        <div class="faq">
+        <h4>🛑 How do I uninstall ParticleEx if I want to?</h4>
+        <p>Easy! If you used a <code>.zip</code> file, simply delete the extracted folder you placed (the folder with the exe). If you used an <code>.exe</code> file, uninstall it like any other program: Go to <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; find ParticleEx and click <strong>Uninstall</strong>. ParticleEx records no permanent changes to your system and can be completely removed in seconds.</p>
+        </div>
+        
+        <div class="faq">
+        <h4>💡 The game I'm playing is already running. Do I need to restart it after installation?</h4>
+        <p>Yes, to see the new particle effects, you must restart GTA 3 or Vice City if it was already open during installation. Simply load your save, and enjoy the upgraded effects.</p>
+        
